@@ -1,0 +1,7 @@
+---
+- name: Deploy Web Application
+  hosts: localhost
+  tasks:
+    - name: Run Docker container
+      command: docker run -d -p 5000:5000 --name web-app simple-web-app
+
